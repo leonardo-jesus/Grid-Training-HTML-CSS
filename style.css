@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  margin-left: 15px;
+}
+
+h1 {
+  color: white;
+  font-family: calibri;
+  font-size: 45px;
+}
+
+footer {
+  margin-top: 5%;
+  color: white;
+  font-family: calibri;
+}
+
+#item1 {
+  grid-area: header;
+}
+
+#item2 {
+  grid-area: menu;
+}
+
+#item3 {
+  grid-area: main;
+}
+
+#item4 {
+  grid-area: right;
+}
+
+#item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: white;
+  margin: 1px;
+}
+
+.item {
+  border: 2px solid #FA932D;
+  border-radius: 4px;
+  font-family: calibri;
+  font-size: 30px;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.item:hover {
+  background-color: #FA932D;
+  color: white;
+  transition: 0.5s all ease-in-out;
+  transform: scale(1.009);
+}
